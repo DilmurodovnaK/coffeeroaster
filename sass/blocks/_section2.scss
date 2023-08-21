@@ -1,0 +1,227 @@
+@import '../mixin';
+@import '../variables';
+.reklama {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 557px;
+    margin-top: 140px;
+    padding-top: 100px;
+    flex-direction: column;
+    background-color: $footer_color;
+    border-radius: 8px;
+    @include for-tablet {
+        margin-top: 950px;
+    }
+    &__theme {
+        font-family: 'Fraunces', serif;
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $primary_color;
+        @include for-phone {
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 28px
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 540px;
+        text-align: center;
+        color: $primary_color;
+        margin-bottom: 24px;
+        margin-top: 32px;
+        @include for-phone {
+            margin-bottom: 24px;
+        }
+    }
+    &__box1 {
+        position: absolute;
+        top: 300px;
+        color: $primary_color;
+        padding: 72px 48px 72px 48px;
+        border-radius: 8px;
+        left: 100px;
+        text-align: center;
+        background-color: $button_color;
+        column-gap: 36px;
+        &__image {
+            @include for-phone {
+                margin-bottom: 56px;
+            }
+        }
+        &__theme {
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 56px 0 24px 0;
+            @include for-tablet {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 16px 0;
+            }
+        }
+        &__text {
+            max-width: 540px;
+            text-align: center;
+            color: $primary_color;
+            max-width: 255px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            @include for-tablet {
+                max-width: 344px;
+                font-size: 15px;
+                line-height: 25px;
+                height: 50px;
+            }
+            @include for-phone {
+                max-width: 212px;
+            }
+        }
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 573px;
+            height: 180px;
+            position: unset;
+            margin-bottom: 24px;
+        }
+        @include for-phone {
+            max-width: 279px;
+            height: 382px;
+            flex-direction: column;
+        }
+        @include for-phone {
+            margin-bottom: 24px;
+        }
+    }
+    &__box2 {
+        position: absolute;
+        top: 300px;
+        color: $primary_color;
+        padding: 72px 48px 72px 48px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: $button_color;
+        column-gap: 36px;
+        &__image {
+            @include for-phone {
+                margin-bottom: 56px;
+            }
+        }
+        &__theme {
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 56px 0 24px 0;
+            @include for-tablet {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 16px 0;
+            }
+        }
+        &__text {
+            max-width: 540px;
+            text-align: center;
+            color: $primary_color;
+            max-width: 255px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            @include for-tablet {
+                max-width: 344px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            @include for-phone {
+                max-width: 212px;
+            }
+        }
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 573px;
+            height: 180px;
+            position: unset;
+            margin-bottom: 24px;
+        }
+        @include for-phone {
+            max-width: 279px;
+            height: 382px;
+            flex-direction: column;
+        }
+        @include for-phone {
+            margin-bottom: 24px;
+        }
+    }
+    &__box3 {
+        position: absolute;
+        top: 300px;
+        text-align: center;
+        background-color: $button_color;
+        color: $primary_color;
+        padding: 72px 48px 72px 48px;
+        border-radius: 8px;
+        column-gap: 36px;
+        left: 828px;
+        &__image {
+            margin-top: 20px;
+            @include for-phone {
+                margin-bottom: 56px;
+            }
+        }
+        &__theme {
+            font-family: 'Fraunces', serif;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            margin: 56px 0 24px 0;
+            @include for-tablet {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 16px 0;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 540px;
+            text-align: center;
+            color: $primary_color;
+            max-width: 255px;
+            @include for-tablet {
+                max-width: 344px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            @include for-phone {
+                max-width: 212px;
+            }
+        }
+        @include for-tablet {
+            display: flex;
+            align-items: center;
+            max-width: 573px;
+            height: 180px;
+            position: unset;
+            margin-bottom: 24px;
+        }
+        @include for-phone {
+            max-width: 279px;
+            height: 382px;
+            flex-direction: column;
+        }
+        @include for-phone {
+            height: 902px;
+        }
+    }
+}

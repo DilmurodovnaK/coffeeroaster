@@ -1,0 +1,11 @@
+.boxes {
+  display: flex;
+}
+.boxes__4items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxes__4items__item {
+  max-width: 255px;
+}/*# sourceMappingURL=section1.css.map */

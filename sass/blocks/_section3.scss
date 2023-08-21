@@ -1,0 +1,143 @@
+@import '../mixin';
+@import '../variables';
+.orta {
+    margin-top: 400px;
+    padding-left: 30px;
+}
+
+.themes--theme {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $grey_color;
+}
+
+.dumaloq {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    &--dumalo {
+        width: 31px;
+        height: 31px;
+        border: 2px solid #0E8784;
+        border-radius: 100%;
+    }
+    &--chizq {
+        max-width: 300px;
+        width: 100%;
+        border-radius: 1px;
+        border: solid $secondary_color;
+        height: 3px;
+        @include for-tablet {
+            max-width: 200px;
+        }
+    }
+}
+
+.types {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 30px;
+    column-gap: 20px;
+    &__box {
+        max-width: 285px;
+        height: 355px;
+        &--number {
+            max-width: 90px;
+            height: 72px;
+            font-family: 'Fraunces', serif;
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 72px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $secondary_color;
+        }
+        &--theme {
+            max-width: 255px;
+            height: 73px;
+            top: 110px;
+            font-family: 'Fraunces', serif;
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 36px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $footer_color;
+            margin: 38px 0 42px 0;
+        }
+        &--text {
+            max-width: 285px;
+            height: 130px;
+            top: 225px;
+            font-family: 'Barlow', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: $footer_color;
+            margin-bottom: 64px;
+        }
+        &--btn {
+            max-width: 217px;
+            height: 56px;
+            background-color: #66D2CF;
+            font-family: 'Fraunces', serif;
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 25px;
+            letter-spacing: 0px;
+            margin-left: 30px;
+            text-align: center;
+            color: $primary_color;
+            top: 15px;
+            left: 31px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 48px;
+            border-color: none;
+        }
+    }
+}
+
+@media (max-width:952) {
+    .types__box {
+        max-width: 223px;
+        height: 371px;
+        &--theme {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        &--text {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width:644px) {
+    .orta {
+        margin-top: 1040px;
+    }
+    .themes--theme {
+        text-align: center;
+    }
+    .dumaloq {
+        display: none;
+    }
+    .types {
+        flex-direction: column;
+        align-items: center;
+        &__box {
+            margin-bottom: 56px;
+            &--number {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

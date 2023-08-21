@@ -1,0 +1,38 @@
+@import '../mixin';
+@import '../variables';
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2C343E;
+    height: 120px;
+    margin-top: 216px;
+    align-items: center;
+    &__menu {
+        display: flex;
+        column-gap: 33px;
+        &__link {
+            text-decoration: none;
+            color: $grey_color;
+        }
+    }
+}
+
+@media (max-width:837px) {
+    .footer__menu__link {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:644px) {
+    .footer {
+        height: 270px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.footer__menu__link:hover {
+    color: $primary_color;
+    cursor: pointer;
+}
